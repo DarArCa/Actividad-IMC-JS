@@ -1,0 +1,70 @@
+/* contenedor general */
+.contenedorpadre {
+    width: 100%; /* hace que el contenedor ocupe todo el ancho disponible */
+    max-width: 500px; /* asegura que no se expanda más allá de 500px */
+    margin: 20px auto; /* coloca el contenedor en el centro de la página con un margen de 20px en la parte superior e inferior */
+    padding: 20px; /* agrega un relleno de 20px dentro del contenedor */
+    box-sizing: border-box; /* asegura que el padding no haga que el contenedor se desborde */
+}
+
+/* contenedor de cada fila */
+.espacioformcadauno {
+    display: flex; /* usa flexbox para organizar los elementos dentro del contenedor */
+    align-items: center; /* alinea los elementos verticalmente en el centro */
+    margin-bottom: 20px; /* agrega un margen en la parte inferior de cada fila */
+    padding: 10px; /* agrega un relleno de 10px dentro de cada fila */
+    gap: 20px; /* agrega un espacio de 20px entre los elementos dentro de la fila */
+    width: 100%; /* hace que cada fila ocupe todo el ancho disponible */
+    box-sizing: border-box; /* asegura que el padding no cause desbordamientos */
+}
+
+/* campos de entrada */
+input {
+    width: 100%; /* hace que los inputs ocupen todo el ancho disponible */
+    padding: 10px; /* agrega un relleno de 10px dentro de los campos de entrada */
+    border-radius: 5px; /* redondea las esquinas del borde de los campos de entrada */
+    font-size: 1rem; /* establece el tamaño de la fuente en 1rem */
+    border: 1px solid #010101; /* agrega un borde de 1px de color negro alrededor de los campos de entrada */
+    box-sizing: border-box; /* asegura que el padding no haga que el input se desborde */
+}
+
+/* ajuste para campos de texto y número */
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%; /* hace que los campos de texto, número y email ocupen todo el ancho disponible */
+}
+
+/* botón de submit */
+input[type="submit"] {
+    background-color: rgb(218, 196, 196); /* establece el color de fondo del botón en un tono rojizo */
+    color: white; /* cambia el color del texto a blanco */
+    padding: 1rem; /* agrega un relleno de 1rem dentro del botón */
+    border: none; /* elimina el borde del botón */
+    border-radius: 5px; /* redondea las esquinas del borde del botón */
+    font-size: 1rem; /* establece el tamaño de la fuente en 1rem */
+    cursor: pointer; /* cambia el cursor a mano cuando se pasa por encima del botón */
+    width: 100%; /* hace que el botón ocupe todo el ancho disponible */
+    box-sizing: border-box; /* asegura que el padding no haga que el botón se desborde */
+}
+
+/* efecto cuando el mouse pasa sobre el botón */
+input[type="submit"]:hover {
+    background-color: rgb(168, 130, 130); /* cambia el color de fondo del botón a un tono más oscuro al pasar el ratón */
+}
+
+/* ajustes para pantallas pequeñas */
+@media (max-width: 500px) {
+    .espacioformcadauno {
+        flex-direction: column; /* cambia la dirección del layout a columna en pantallas pequeñas */
+        align-items: stretch; /* hace que los elementos se estiren para ocupar todo el ancho disponible */
+    }
+
+    label, input {
+        width: 100%; /* asegura que las etiquetas y los campos de entrada ocupen todo el ancho disponible */
+    }
+}
+
+/*este es el contenedor que va a imprimir el resultado sobre el imc */
+.resultado-imc {
+    margin-top: 20px;
+    font-weight: bold;
+}

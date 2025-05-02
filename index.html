@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/archivo.js" async></script>
+    <!-- <script src="js/archivo.js" defer></script> -->
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="funcionamiento.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+<div class="contenedorpadre">
+    <form id="registro" action="target_blank" method="POST">
+
+        <div class="espacioformcadauno">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div class="espacioformcadauno">
+        <label for="apellido">Peso</label>
+        <input type="number" id="peso" name="peso" placeholder="Ingrese su peso en kls">
+        </div>
+        <div class="espacioformcadauno">
+        <label for="peso">Estatura</label>
+        <h3 class="texto-explicativo">Porfavor ingrese su altura en mts, ejemplo 1.70</h3>
+        <input type="number" id="Estatura" name="Estatura" step="0.01" placeholder="1.70">
+        <!--step="0.01"es lo que permite ingresar en el campo decimales, asi me ahorro el transformar centimetros a metros
+        el valor predeterminado de number son enteros, pero con steep le puedo definir la cantidad de decimales que le quiera agregar,
+        en este caso dos.-->
+        </div>
+        <div class="espacioformcadauno">
+            <input type="submit" value="Enviar">
+        </div>
+      </form>
+          
+</div>  
+<div id="resultadoim" class="resultadoim"></div>
+
+
 </body>
 </html>

@@ -1,0 +1,1 @@
+el 90% de los comentarios en estilos fueron realizados por  inteligencia artificial y la capacidad responsive, lo utilizo como forma de seguir guiandome o recordar funciones y no tener que volver a buscarlas, al final de todo le pido a chatgpt que comente todo el codigo que le paso, todos los comentarios en los archivos js fueron realizados por parte mia.
